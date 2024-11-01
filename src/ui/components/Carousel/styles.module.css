@@ -1,0 +1,23 @@
+.swiper {
+  width: 100%;
+  height: max-content;
+  border-radius: 1rem;
+  --swiper-theme-color: black;
+}
+
+.swiperSlide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiperSlide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}

@@ -1,0 +1,31 @@
+.carWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.photo {
+  margin-bottom: 8px;
+}
+
+.name {
+  font-size: 2rem;
+  line-height: 2.75rem;
+  font-weight: 700;
+  color: rgba(1, 12, 19, 1);
+}
+
+.porperties {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  color: rgba(154, 167, 173, 1);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 900px) {
+  .photo {
+    width: 280px;
+    height: 180px;
+  }
+}

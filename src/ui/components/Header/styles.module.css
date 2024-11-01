@@ -1,0 +1,36 @@
+.headerWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0 20px 11%;
+  height: 108px;
+  background-color: rgba(1, 12, 19, 1);
+}
+
+.divider {
+  height: 100%;
+  width: 2px;
+  margin: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.logoText {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  cursor: default;
+}
+
+@media (max-width: 900px) {
+  .headerWrapper {
+    height: 54px;
+    padding: 9px 0 15px 11%;
+  }
+
+  .logoText {
+    font-size: 10px;
+  }
+}

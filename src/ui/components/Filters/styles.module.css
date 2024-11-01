@@ -1,0 +1,41 @@
+.filterBlockWrapper {
+  width: 500px;
+}
+
+.filterType {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+
+.filtersWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.filterOptionsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 0 30px 0;
+  border-bottom: 2px solid rgba(154, 167, 173, 1);
+}
+
+@media (max-width: 1440px) {
+  .filterBlockWrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .filterType {
+    display: none;
+  }
+
+  .filterOptionsWrapper {
+    justify-content: center;
+    border: none;
+  }
+}

@@ -1,0 +1,239 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.detailsWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 167.5px 0px 219px;
+  gap: 20px;
+}
+
+.name {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  color: rgba(1, 12, 19, 1);
+}
+
+.vin {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400px;
+  color: rgba(154, 167, 173, 1);
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  gap: 29px;
+}
+
+.autoProfileWrapper {
+  width: 626px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.criteriasWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.priceWrapper,
+.legalPurityWrapper,
+.characteristics {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  border-radius: 12px;
+  background-color: rgba(244, 247, 248, 1);
+}
+
+.price {
+  font-size: 2rem;
+  line-height: 2.625rem;
+  font-weight: 600;
+  color: rgba(202, 1, 0, 1);
+}
+
+.legalPurityWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.legalPurity {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+
+.characteristicsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.characteristicsTitle {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+}
+
+.characteristics {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.characteristic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.characteristicText {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+
+.carousel {
+  height: auto;
+}
+
+.creditWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 150px 0 272px 219px;
+  background-image: url("/bg-image.png"),
+    linear-gradient(102.95deg, #00a8cd 62.03%, #047dbf 110.97%);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.creditTitle {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+
+.credit {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 60px;
+}
+
+.creditDescription {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}
+
+.creditButton {
+  height: 80px;
+  border-radius: 8px;
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+  font-weight: 500;
+  width: 440px;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(202, 1, 0, 1);
+}
+
+@media (max-width: 1600px) {
+  .details {
+    flex-direction: column-reverse;
+  }
+
+  .autoProfileWrapper {
+    width: 100%;
+  }
+
+  .carousel {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+
+  .creditWrapper {
+    padding: 150px 219px 272px 219px;
+  }
+
+  .credit {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .pageWrapper {
+    gap: 40px;
+  }
+
+  .autoProfileWrapper {
+    gap: 30px;
+  }
+
+  .detailsWrapper {
+    margin: 30px 20px;
+  }
+
+  .priceWrapper {
+    padding: 10px 20px;
+  }
+
+  .legalPurityWrapper {
+    padding: 10px 20px;
+  }
+
+  .characteristics {
+    padding: 30px;
+    gap: 10px;
+  }
+
+  .characteristic {
+    gap: 20px;
+  }
+
+  .characteristicIcon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .creditWrapper {
+    padding: 75px 110px 75px 110px;
+    background: linear-gradient(102.95deg, #00a8cd 62.03%, #047dbf 110.97%);
+    gap: 30px;
+  }
+
+  .creditButton {
+    height: 40px;
+    width: 50%;
+  }
+
+  .credit {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .creditButton {
+    width: 100%;
+  }
+}
