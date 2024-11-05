@@ -5,18 +5,7 @@ import styles from "./styles.module.css";
 import { Car } from "@/ui/components/Car";
 import { Filters } from "@/ui/components/Filters";
 import { getAllCars } from "@/services";
-
-export interface CarBrandRes {
-  car_id: number;
-  brandName: string;
-  modelName: string;
-  EngineSize: number;
-  Power: number;
-  Transmission: string;
-  photos: {
-    imgs: { url: string }[];
-  };
-}
+import { CarBrandRes } from "@/types";
 
 export default async function BrandPage({
   params,

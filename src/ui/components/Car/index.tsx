@@ -4,17 +4,7 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 
 import { MoreButton } from "../MoreButton";
-
-export interface CarProps {
-  id: number;
-  brand: string;
-  brandName: string;
-  modelName: string;
-  engineSize: number;
-  power: number;
-  transmission: string;
-  photoSrc: string;
-}
+import { CarProps } from "@/types";
 
 export const Car = ({
   id,

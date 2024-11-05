@@ -9,12 +9,9 @@ import styles from "./styles.module.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { CarouselProps } from "@/types";
 
-export interface Carousel {
-  images: { _id: string; url: string }[];
-}
-
-export default function Carousel({ images }: Carousel) {
+export default function Carousel({ images }: CarouselProps) {
   return (
     <Swiper
       navigation={true}

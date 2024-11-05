@@ -7,21 +7,12 @@ import styles from "./styles.module.css";
 
 import { FilterButton } from "../FilterButton";
 import { ResetFiltersButton } from "../ResetFiltersButton";
+import { brandList } from "@/constants";
 
 export const Filters = () => {
   const pathname = usePathname();
   const className = (brand: string) =>
     pathname.slice(6) !== brand ? "filterButton" : "filterButton_active";
-
-  const brandList = [
-    "Chery",
-    "Haval",
-    "Geely",
-    "Exeed",
-    "Omoda",
-    "Changan",
-    "Jaecoo",
-  ];
 
   return (
     <div className={styles.filterBlockWrapper}>
