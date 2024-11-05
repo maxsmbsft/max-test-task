@@ -21,7 +21,9 @@ export interface CarBrandRes {
 export default async function BrandPage({
   params,
 }: {
-  params: { brand: string };
+  params: Promise<{
+    brand: string;
+  }>;
 }) {
   const { brand } = await params;
   const carsList: CarBrandRes[] = await getAllCars(brand);

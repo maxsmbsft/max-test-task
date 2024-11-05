@@ -16,7 +16,10 @@ export async function generateStaticParams() {
 export default async function CarDetails({
   params,
 }: {
-  params: { brand: string; id: number };
+  params: Promise<{
+    brand: string;
+    id: number;
+  }>;
 }) {
   const { brand, id } = await params;
   const car = await getCarById(brand, id);
