@@ -5,14 +5,19 @@ import styles from "./styles.module.css";
 
 import Carousel from "@/ui/components/Carousel";
 import { getAllCars, getCarById } from "@/services";
+import { CarBrandRes } from "../page";
 
 export async function generateStaticParams() {
-  const cars: any[] = await getAllCars("Chery");
+  const cars: CarBrandRes[] = await getAllCars("Chery");
 
   return cars.map((car) => ({ slug: car.car_id.toString() }));
 }
 
-export default async function CarDetails({ params }: any) {
+export default async function CarDetails({
+  params,
+}: {
+  params: { brand: string; id: number };
+}) {
   const { brand, id } = await params;
   const car = await getCarById(brand, id);
   const {
